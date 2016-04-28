@@ -65,12 +65,12 @@
 				  </div><!-- end of 1st col -->
 				  <div class="col-md-6">
 				 	<div class="btn-group" role="group" aria-label="...">
-					  <button type="button" class="btn btn-primary" ng-click="order('-priority')">Order by highest priority</button>
-					  <span class="sortorder" ng-show="predicate === '-priority'" ng-class="{reverse:reverse}"></span>
-					  <button type="button" class="btn btn-primary" ng-click="order('priority')">Order by lower priority</button>
-					  <span class="sortorder" ng-show="predicate === 'priority'" ng-class="{reverse:reverse}"></span>
-					  <button type="button" class="btn btn-primary" ng-click="order('priority')">Order alphabetically</button>
-					  <span class="sortorder" ng-show="predicate === 'list'" ng-class="{reverse:reverse}"></span>
+					  <button type="button" class="btn btn-primary" ng-click="setOrder('-priority')">Order by highest priority</button>
+					  <span ng-show="predicate === '-priority'" ng-class="{reverse:reverse}"></span>
+					  <button type="button" class="btn btn-primary" ng-click="setOrder('priority')">Order by lower priority</button>
+					  <span ng-show="predicate === 'priority'" ng-class="{reverse:reverse}"></span>
+					  <button type="button" class="btn btn-primary" ng-click="setOrder('priority')">Order alphabetically</button>
+					  <span  ng-show="predicate === 'list'" ng-class="{reverse:reverse}"></span>
 					</div>
 					<!-- OUTPUT RESULTS HERE -->
 					<table>
